@@ -1,0 +1,13 @@
+.npm-cache/
+node_modules/
+package.json
+package-lock.json
+.env*
+*.ps1
+*.cmd
+automation-test.*
+vercel-permission-test.*
+.git/
+.gitignore
+Thumbs.db
+.DS_Store

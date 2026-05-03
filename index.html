@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>熊猫头 - 史上最强 Meme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: '#0A0A0A',
+            card: '#1A1A1A',
+            meme: '#FFCC00',
+            muted: '#CCCCCC'
+          },
+          fontFamily: {
+            impact: ['Impact', 'SimHei', 'Heiti SC', 'Arial Black', 'sans-serif']
+          },
+          boxShadow: {
+            meme: '0 0 32px rgba(255,204,0,0.42)',
+            memeSoft: '0 0 22px rgba(255,204,0,0.28)'
+          },
+          dropShadow: {
+            panda: '0 10px 15px rgba(255,204,0,0.3)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0A0A0A; color: #FFFFFF; }
+    .impact-title {
+      font-family: Impact, SimHei, "Heiti SC", "Arial Black", sans-serif;
+      letter-spacing: -4px;
+    }
+    .meme-button {
+      background: #FFCC00;
+      color: #000000;
+      border-radius: 1.5rem;
+      font-weight: 900;
+      transition: transform .22s ease, box-shadow .22s ease;
+      box-shadow: 0 0 0 rgba(255,204,0,0);
+    }
+    .meme-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 28px rgba(255,204,0,0.62);
+    }
+    .meme-card {
+      background: #1A1A1A;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 1.5rem;
+      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+    }
+    .meme-card:hover {
+      transform: scale(1.05);
+      border-color: #FFCC00;
+      box-shadow: 0 0 28px rgba(255,204,0,0.38);
+    }
+    .panda-img { filter: drop-shadow(0 10px 15px rgba(255,204,0,0.3)); }
+    .filter-chip.active {
+      background: #FFCC00;
+      color: #000000;
+      border-color: #FFCC00;
+      box-shadow: 0 0 22px rgba(255,204,0,0.42);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-night text-white antialiased selection:bg-meme selection:text-black">
+  <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-night/88 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-3 lg:px-8">
+      <a href="#home" class="flex shrink-0 items-center gap-3">
+        <img src="img/ChatGPT Image May 2, 2026, 11_09_28 PM.png" alt="熊猫头" class="panda-img h-11 w-11 rounded-full object-cover">
+        <span class="text-2xl font-black text-meme">熊猫头</span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm font-bold text-muted lg:flex">
+        <a href="#home" class="hover:text-meme">首页</a>
+        <a href="#gallery" class="hover:text-meme">图库</a>
+        <a href="#download" class="hover:text-meme">下载</a>
+        <a href="#generator" class="hover:text-meme">生成器</a>
+        <a href="#origin" class="hover:text-meme">起源</a>
+        <a href="https://x.com/xiongmaotousol" class="hover:text-meme">社区</a>
+      </div>
+      <a href="https://x.com/xiongmaotousol" class="meme-button shrink-0 px-5 py-3 text-sm">关注 @xiongmaotousol</a>
+    </div>
+    <div class="flex gap-5 overflow-x-auto border-t border-white/10 px-5 py-3 text-sm font-bold text-muted lg:hidden">
+      <a href="#home" class="shrink-0 hover:text-meme">首页</a>
+      <a href="#gallery" class="shrink-0 hover:text-meme">图库</a>
+      <a href="#download" class="shrink-0 hover:text-meme">下载</a>
+      <a href="#generator" class="shrink-0 hover:text-meme">生成器</a>
+      <a href="#origin" class="shrink-0 hover:text-meme">起源</a>
+      <a href="https://x.com/xiongmaotousol" class="shrink-0 hover:text-meme">社区</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="relative flex min-h-screen items-center overflow-hidden px-5 pt-36 lg:px-8 lg:pt-20">
+      <img src="img/ChatGPT Image May 2, 2026, 11_09_28 PM.png" alt="哭笑露牙熊猫头" class="absolute inset-0 h-full w-full scale-110 object-cover blur-2xl brightness-50">
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black/72 to-night"></div>
+      <div class="relative z-10 mx-auto flex max-w-7xl flex-col items-center text-center">
+        <img src="img/ChatGPT Image May 2, 2026, 11_09_28 PM.png" alt="熊猫头" class="panda-img mb-8 h-36 w-36 rounded-full object-cover lg:h-48 lg:w-48">
+        <h1 class="impact-title text-6xl leading-none text-white sm:text-8xl lg:text-[10rem]">史上最强 Meme</h1>
+        <p class="mt-8 max-w-4xl whitespace-pre-line text-xl font-bold leading-relaxed text-muted lg:text-3xl">@xiongmaotousol 官方资源站
+熊猫头 · 表情包界常青树 · 2009年至今永不过时</p>
+        <div class="mt-10 grid w-full max-w-5xl gap-4 sm:grid-cols-3">
+          <a href="#download" class="meme-button px-7 py-5 text-lg">📥 立即下载全套（300+张经典）</a>
+          <a href="#gallery" class="meme-button px-7 py-5 text-lg">🐼 进入图库</a>
+          <a href="https://x.com/xiongmaotousol" class="meme-button px-7 py-5 text-lg">🔥 关注官推</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="origin" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-5xl">
+        <div class="meme-card p-8 lg:p-12">
+          <h2 class="impact-title text-5xl leading-none text-meme lg:text-7xl">熊猫头是谁？</h2>
+          <p class="mt-8 whitespace-pre-line text-lg font-semibold leading-9 text-muted lg:text-2xl">诞生于2009年，起源于《暴走漫画》风格的“换脸”表情包。
+极简主义熊猫头 + 人类表情 = 沙雕灵魂。
+从微信斗图到全球Meme，熊猫头是真正的<strong class="text-white">表情包界常青树</strong>，万物皆可配！
+它没有固定台词，却能表达一切情绪——哭哭、FGNB、整活、抽象……
+这里就是它的官方老家（由 @xiongmaotousol 维护）。</p>
+          <a href="https://knowyourmeme.com/memes/chinese-panda-reaction-images-biaoqing-panda-head" class="meme-button mt-9 inline-flex px-7 py-4 text-base lg:text-lg">想了解更多？去 KnowYourMeme 看历史</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="impact-title text-center text-5xl leading-none text-white lg:text-8xl">经典熊猫头图库 · 无限刷</h2>
+        <p class="mx-auto mt-6 max-w-4xl whitespace-pre-line text-center text-lg font-bold leading-8 text-muted lg:text-2xl">纯图模式 · 复制粘贴即用 · 斗图党天堂
+（全部为 @xiongmaotousol 自有MEME图 + 经典合集）</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-3">
+          <button class="filter-chip active rounded-full border border-white/15 px-5 py-3 text-sm font-black text-white transition hover:border-meme hover:text-meme" data-filter="all">全部</button>
+          <button class="filter-chip rounded-full border border-white/15 px-5 py-3 text-sm font-black text-white transition hover:border-meme hover:text-meme" data-filter="嘴臭互怼">嘴臭互怼</button>
+          <button class="filter-chip rounded-full border border-white/15 px-5 py-3 text-sm font-black text-white transition hover:border-meme hover:text-meme" data-filter="社死现场">社死现场</button>
+          <button class="filter-chip rounded-full border border-white/15 px-5 py-3 text-sm font-black text-white transition hover:border-meme hover:text-meme" data-filter="社会人">社会人</button>
+          <button class="filter-chip rounded-full border border-white/15 px-5 py-3 text-sm font-black text-white transition hover:border-meme hover:text-meme" data-filter="抽象整活">抽象整活</button>
+          <button class="filter-chip rounded-full border border-white/15 px-5 py-3 text-sm font-black text-white transition hover:border-meme hover:text-meme" data-filter="经典文字梗">经典文字梗</button>
+        </div>
+        <div class="mt-12 columns-2 gap-5 lg:columns-4">
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="经典文字梗"><img src="img/1692255195207405.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="社死现场"><img src="img/1692257201139460.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="经典文字梗"><img src="img/1692257201156656.gif" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="社会人"><img src="img/1692257201169226.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="社会人"><img src="img/1692257201271869.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="嘴臭互怼"><img src="img/1692257201335377.gif" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="嘴臭互怼"><img src="img/1692257201391712.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="嘴臭互怼"><img src="img/1692257201435611.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="嘴臭互怼"><img src="img/1692257201542782.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="抽象整活"><img src="img/1692257201633737.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="抽象整活"><img src="img/1692257201816252.png" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="嘴臭互怼"><img src="img/1692257201908311.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="经典文字梗"><img src="img/1692257201974946.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="社死现场"><img src="img/1693298986420610.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="社会人"><img src="img/1693299000975896.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="抽象整活"><img src="img/1693299012742662.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="抽象整活"><img src="img/1711027284941297.jpg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="经典文字梗"><img src="img/1711027309437010.jpeg" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+          <figure class="gallery-item meme-card mb-5 break-inside-avoid p-3" data-category="嘴臭互怼"><img src="img/1711027415538710.png" alt="熊猫头 Meme" class="panda-img w-full rounded-3xl object-cover"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="impact-title text-center text-5xl leading-none text-meme lg:text-8xl">📥 下载全套熊猫头表情包</h2>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <a href="https://www.qudoutu.cn/xiongmaotou/" class="meme-card block p-8">
+            <h3 class="text-3xl font-black text-white">下载 147张经典合集</h3>
+            <p class="mt-5 text-xl font-bold leading-8 text-muted">最全斗图版 · 立即前往</p>
+          </a>
+          <a href="https://zhuanlan.zhihu.com/p/384244240" class="meme-card block p-8">
+            <h3 class="text-3xl font-black text-white">下载 300+高清沙雕版</h3>
+            <p class="mt-5 text-xl font-bold leading-8 text-muted">知乎经典合集 · 一键刷完</p>
+          </a>
+          <a href="https://www.greenxf.com/soft/302339.html" class="meme-card block p-8">
+            <h3 class="text-3xl font-black text-white">下载 GIF动图包</h3>
+            <p class="mt-5 text-xl font-bold leading-8 text-muted">动态沙雕熊猫头V15.4</p>
+          </a>
+        </div>
+        <p class="mt-8 text-center text-sm font-bold text-muted lg:text-base">全部免费 · 永久更新 · 来自 @xiongmaotousol 自有图库 + 社区经典</p>
+      </div>
+    </section>
+
+    <section id="generator" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-5xl text-center">
+        <h2 class="impact-title text-5xl leading-[0.95] text-white lg:text-8xl">
+          <span class="block">不想只当搬运工？</span>
+          <span class="block">自己造！</span>
+        </h2>
+        <div class="mt-12 flex justify-center">
+          <a href="https://nbchart.com/panda/index.php" class="meme-button px-8 py-6 text-xl">🛠 进入在线生成器</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 px-5 py-10 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center lg:flex-row">
+      <p class="font-bold text-muted">© 2026 熊猫头 - 史上最强 Meme</p>
+      <div class="flex flex-wrap justify-center gap-6 font-bold text-muted">
+        <a href="https://x.com/xiongmaotousol" class="hover:text-meme">Twitter</a>
+        <a href="#gallery" class="hover:text-meme">图库</a>
+        <a href="#download" class="hover:text-meme">下载</a>
+        <a href="#origin" class="hover:text-meme">起源</a>
+      </div>
+    </div>
+    <p class="mt-8 text-center text-sm font-bold text-muted">Made with ❤️ & 熊猫头</p>
+  </footer>
+
+  <script>
+    const chips = document.querySelectorAll('.filter-chip');
+    const items = document.querySelectorAll('.gallery-item');
+
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const filter = chip.dataset.filter;
+
+        chips.forEach((button) => button.classList.remove('active'));
+        chip.classList.add('active');
+
+        items.forEach((item) => {
+          const isVisible = filter === 'all' || item.dataset.category === filter;
+          item.style.display = isVisible ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
